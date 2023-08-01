@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Innerve interview task </title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+       
+        <!--css-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="innerve.css"> 
+    </head>
+    <body>
+        <header id="header">
+        <a href="#" class="logo">In<span>.</span>Blog</a>
+        
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#bookmark">Bookmark</a></li>
+                <li><a href="#elements">Elements</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul> 
+        </header>
+        <section> 
+            <img src="rm301-eye-06.jpg" id="counter">
+            <img src="My project-1 (26).png" id="flybottom">
+            <img src="My project-1 (23).png" id="flyright">
+            <img src="My project-1 (24).png" id="flyleft"> 
+            <h2 id="text"><span>Dear</span><br>Diary</h2>
+        </section>
+
+        <div class="blog" id="blog">
+        
+        
+            <div class="row1">
+                <h2>The Blog</h2>
+                <p>KNow more about recipies blah bfrdufkucgr <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consequatur laudantium minus facilis necessitatibus 
+                omnis vero optio expedita ex dicta eaque officiis maiores beatae obcaecati voluptate deserunt, architecto, exercitationem dolore.
+                <br> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit impedit fuga reiciendis magni perspiciatis odit repellendus? Nostrum nisi culpa 
+                iure architecto veniam iste natus doloribus, vero et perferendis tempore vitae.</p>
+            </div>
+                <div class="container-fluid">
+                
+                    <div class="card01">
+                        <div class="imgBx">
+                            <img src="portrait-young-woman-taking-pictures-holiday.jpg">
+                        </div>
+                        <div class="content01">
+                            <h2>02 Aug 2023</h2>
+                            <p>Ingre Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, odio saepe iste mollitia maxime accusantium ut nihil.</p>
+                            <a href="#Ramen">Read More</a>
+                        </div>
+                    </div>
+                
+                    <div class="card01">
+                        <div class="imgBx">
+                            <img src="studying-together-th-epark.jpg">
+                        </div>
+                        <div class="content01">
+                            <h2>10 July 2023</h2>
+                            <p>Ingre Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, odio saepe iste mollitia maxime accusantium ut nihil.</p>
+                            <a href="#Ramen">Read More</a>
+                        </div>
+                    </div>  
+                
+                    <div class="card01">
+                        <div class="imgBx">
+                            <img src="thoughtful-woman-making-notes-sitting-bench-outdoors.jpg"> 
+                        </div>
+                        <div class="content01">
+                            <h2>08 June 2023 </h2>
+                            <p>Ingre Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, odio saepe iste mollitia maxime accusantium ut nihil.</p>
+                            <a href="#Ramen">Read More</a>   
+                        </div>
+                    </div> 
+                </div>
+                <div class="container-fluid">
+                
+                    <div class="card01">
+                        <div class="imgBx">
+                            <img src="people-cooking-enjoying-food.jpg">
+                        </div>
+                        <div class="content01">
+                            <h2>12 May 2023</h2>
+                            <p>Ingre Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, odio saepe iste mollitia maxime accusantium ut nihil.</p>
+                            <a href="#Ramen">Read More</a>
+                        </div>
+                    </div>
+                
+                    <div class="card01">
+                        <div class="imgBx">
+                            <img src="woman-painting-outdoors.jpg">
+                        </div>
+                        <div class="content01">
+                            <h2>06 April 2023</h2>
+                            <p>Ingre Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, odio saepe iste mollitia maxime accusantium ut nihil.</p>
+                            <a href="#Ramen">Read More</a>
+                        </div>
+                    </div>  
+                
+                    <div class="card01">
+                        <div class="imgBx">
+                            <img src="group-friends-party.jpg"> 
+                        </div>
+                        <div class="content01">
+                            <h2>12 March 2023</h2>
+                            <p>Ingre Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, odio saepe iste mollitia maxime accusantium ut nihil.</p>
+                            <a href="#Ramen">Read More</a>   
+                        </div>
+                    </div> 
+                </div>    
+            <div class="row11"></div>
+        
+        </div>
+
+
+
+        <script type="text/javascript">
+            let text = document.getElementById('text');
+            let flyright = document.getElementById('flyright');
+            let flyleft = document.getElementById('flyleft');
+            let flybottom = document.getElementById('flybottom');
+            let counter = document.getElementById('counter');
+            let header = document.getElementById('header');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+        
+                text.style.top = 50 + value * -0.5 + '%';
+                flyright.style.top = value * -1.5 + 'px';
+                flyright.style.right = value * 2 + 'px';
+                flyleft.style.top = value * -1.5 + 'px';
+                flyleft.style.right = value * 5 + 'px';
+                flybottom.style.top = value * -1.5 + 'px';
+                flybottom.style.right = value * 5 + 'px';
+                counter.style.top = value * 0.25 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            });
+        </script>
+
+
+    </body>
+</html>
