@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Taarangana interview task </title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+       
+        <!--css-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="innerve.css"> 
+    </head>
+    <body>
+        <header id="header">
+        <a href="#" class="logo">Taarang<span>.</span>Events</a>
+        
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blog">Events</a></li>
+                <li><a href="#bookmark">Bookmark</a></li>
+                <li><a href="#elements">Elements</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul> 
+        </header>
+        
+        <div id="blur">
+        <div class="blog" id="blog">
+        
+        
+            <div class="row1">
+            </div>
+            
+                <div class="container-fluid" >
+                
+                    <div class="card01" id="card01">
+                        <div class="imgBx">
+                            <img src="portrait-young-woman-taking-pictures-holiday.jpg">
+                        </div>
+                        <div class="content01">
+                            <h2>Photography Event</h2>
+                            <p>Ingre Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, odio saepe iste mollitia maxime accusantium ut nihil.</p>
+                            <a href="#card01" onclick="toggle()">Register Now</a>
+                        </div>
+                    </div>
+                
+                    <div class="card01">
+                        <div class="imgBx">
+                            <img src="studying-together-th-epark.jpg">
+                        </div>
+                        <div class="content01">
+                            <h2>Code Blooded Hackathon</h2>
+                            <p>Ingre Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, odio saepe iste mollitia maxime accusantium ut nihil.</p>
+                            <a href="#card01" onclick="toggle()">Register Now</a>
+                        </div>
+                    </div>  
+                
+                    <div class="card01">
+                        <div class="imgBx">
+                            <img src="thoughtful-woman-making-notes-sitting-bench-outdoors.jpg"> 
+                        </div>
+                        <div class="content01">
+                            <h2>Right? or Write?</h2>
+                            <p>Ingre Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, odio saepe iste mollitia maxime accusantium ut nihil.</p>
+                            <a href="#card01" onclick="toggle()">Register Now</a>   
+                        </div>
+                    </div> 
+                </div>
+                <div class="container-fluid">
+                
+                    <div class="card01">
+                        <div class="imgBx">
+                            <img src="people-cooking-enjoying-food.jpg">
+                        </div>
+                        <div class="content01">
+                            <h2>Bake-A-Cake</h2>
+                            <p>Ingre Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, odio saepe iste mollitia maxime accusantium ut nihil.</p>
+                            <a href="#card01" onclick="toggle()">Register Now</a>
+                        </div>
+                    </div>
+                
+                    <div class="card01">
+                        <div class="imgBx">
+                            <img src="woman-painting-outdoors.jpg">
+                        </div>
+                        <div class="content01">
+                            <h2>Canvas Carnival</h2>
+                            <p>Ingre Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, odio saepe iste mollitia maxime accusantium ut nihil.</p>
+                            <a href="#card01" onclick="toggle()">Register Now</a>
+                        </div>
+                    </div>  
+                
+                    <div class="card01">
+                        <div class="imgBx">
+                            <img src="group-friends-party.jpg"> 
+                        </div>
+                        <div class="content01">
+                            <h2>Blind Dating</h2>
+                            <p>Ingre Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, odio saepe iste mollitia maxime accusantium ut nihil.</p>
+                            <a href="#card01" onclick="toggle()">Register Now</a>   
+                        </div>
+                    </div> 
+                </div> 
+            </div> 
+            
+            <div class="row1">
+            </div>
+        </div>
+
+        <div class="popup" id="popup">
+            <h2>Register now</h2>
+        
+            <div class="contact" id="contact">
+                <div class="row3">
+                <div class="container1">
+                    <div class="contactform">
+                        <p>Kindly enter your details</p>
+                        <div class="formbox">
+                            <div class="inputbox w50">
+                                <input type="text" name="" required>
+                                <span>Full Name</span>
+                            </div>
+        
+                            <div class="inputbox w50">
+                                <input type="text" name="" required>
+                                <span>Email Address </span>
+                            </div>
+        
+                            <div class="inputbox w50">
+                                <input type="text" name="" required>
+                                <span>Mobile Number</span>
+                            </div>
+        
+                            <div class="inputbox w50">
+                                <input type="text" name="" required>
+                                <span> College Name</span>
+                            </div>
+        
+        
+                            <div class="inputbox w100">
+                                <input type="submit" value="Send">
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <a href="#" onclick="toggle()">close</a>
+        </div>
+        <script type="text/javascript">
+            function toggle(){
+                var blur = document.getElementById('blur');
+                blur.classList.toggle('active');
+                var popup = document.getElementById('popup');
+                popup.classList.toggle('active');
+            }
+        </script>
+
+        <script type="text/javascript">
+            let text = document.getElementById('text');
+            let flyright = document.getElementById('flyright');
+            let flyleft = document.getElementById('flyleft');
+            let flybottom = document.getElementById('flybottom');
+            let counter = document.getElementById('counter');
+            let header = document.getElementById('header');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+        
+                text.style.top = 50 + value * -0.5 + '%';
+                flyright.style.top = value * -1.5 + 'px';
+                flyright.style.right = value * 2 + 'px';
+                flyleft.style.top = value * -1.5 + 'px';
+                flyleft.style.right = value * 5 + 'px';
+                flybottom.style.top = value * -1.5 + 'px';
+                flybottom.style.right = value * 5 + 'px';
+                counter.style.top = value * 0.25 + 'px';
+                header.style.top = value * 0.5 + 'px';
+            });
+        </script>
+
+
+    </body>
+</html>
